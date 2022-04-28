@@ -1,0 +1,19 @@
+<div id="recommendations-panel">
+    <div class="profile-name-pic">
+        <img src="{{ user['profile_url'] }}" alt="profile-pic">
+        <h2>{{ user['username'] }}</h2>
+    </div>
+    <div class="suggestions">
+        <h3>Suggestions for you</h3>
+        {% for suggestion in suggestions %}
+        <div class="suggestion">
+            <img src="{{ suggestion['profile_url'] }}" alt="suggestion-pic">
+            <div class="account-suggestion">
+                <h4>{{ suggestion['username'] }}</h4>
+                <h5>suggested for you</h5>
+            </div>
+            <h5><button class="suggested-follow">follow</button></h5>
+        </div>
+        {% endfor %}
+    </div>
+</div>

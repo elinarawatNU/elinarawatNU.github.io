@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Photo App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <!-- NAVIGATION BAR -->
+        {% include 'includes/navbar.html' %}
+    </header>
+    <main> 
+        <div id="left-side">
+            <!-- STORIES PANEL -->
+            {% include 'includes/stories.html' %}
+            <!-- CARDS -->
+            {% include 'includes/cards.html' %}
+        </div>
+        <!-- RECOMMENDATIONS PANEL -->
+        <div id="right-side">
+            {% include 'includes/suggestions.html' %}
+        </div>
+    </main>
+</body>
+</html>
+<!-- For users to easily add alt-text to their images, I would add an option under the 3 dots on the top-right of a picture to edit the alt-text -->
